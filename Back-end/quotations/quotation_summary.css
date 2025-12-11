@@ -1,0 +1,74 @@
+/* quotation_summary.css */
+.quotation-summary {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.quotation-summary h2 {
+    color: #0ce48d;
+    margin-bottom: 20px;
+}
+
+.quotation-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.quotation-summary th {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: left;
+}
+
+.quotation-summary td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mint {
+    color: #0ce48d;
+}
+
+.summary-totals {
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.validate-btn {
+    background-color: #0ce48d;
+    color: white;
+}
+
+.rechoose-btn {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.error {
+    color: red;
+    padding: 20px;
+}

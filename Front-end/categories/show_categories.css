@@ -1,0 +1,290 @@
+
+
+
+body {
+
+    font-family: "Parkinsans", sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+header {
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.face {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    font-weight: bold;
+}
+
+
+.logo {
+    width: 90px;
+    border-radius: 50px;
+    margin-block: 8px;
+}
+
+.name {
+    margin-left: 8px;
+    color: white;
+
+
+}
+
+.nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.contactus {
+
+
+    padding-block: 7px;
+    padding-inline: 5px;
+    color: white;
+
+    margin-right: 15px;
+
+}
+
+.contactus:link {
+    text-decoration: none
+}
+
+.contactus:hover {
+
+    color: orangered;
+
+}
+
+.login {
+
+    padding-block: 7px;
+    padding-inline: 5px;
+    color: white;
+
+
+}
+
+
+.login:link {
+    text-decoration: none
+}
+
+.login:hover {
+
+    color: orangered;
+
+}
+
+
+
+
+.categories {
+    padding: 20px;
+    text-align: center;
+}
+
+.categories h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.bloc {
+    margin-bottom: 30px;
+}
+
+.bloc a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #212121;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.bloc a:hover {
+    background-color: orangered;
+}
+
+.cat {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    
+}
+
+.cat div {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s;
+    min-width: 300px;
+}
+
+.cat div:hover {
+    transform: translateY(-5px);
+}
+.img{
+    width: 300px;
+}
+
+.cat h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+.cat p {
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    color: #555;
+}
+
+.cat button {
+    padding: 10px 20px;
+    background-color: #212121;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cat button:hover {
+    background-color: orangered;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .header{
+        width: 100%;
+    }
+
+    .name{
+        font-size: 10px;
+      
+        
+    }
+
+    .face{
+    
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .logo {
+        width: 40%; 
+      
+        padding: 0px;
+        margin-right: 0px;
+    }
+
+    .nav{
+        font-size: 15px;
+        margin-left: 50px;
+  
+
+    }
+
+
+    .contactus {
+
+
+
+        width: 85px;
+        color: white;
+        margin-right: 10px;
+    
+    }
+
+
+
+
+}
+
+
+.slide{
+
+    height: 100%;
+    width: 250px;
+    position:absolute;
+    background-color: #fff;
+    margin-top: -100px;
+
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.slide h1{
+    color: #8000ff;
+    font-weight: 800;
+    text-align: center;
+    pointer-events: none;
+   
+}
+
+.slide ul{
+    list-style: none;
+}
+
+.slide ul li a{
+    color: #011a41;
+    font-weight: 500;
+    padding-block: 8px;
+    display: block;
+    text-decoration: none;
+    transition:  ease 0.3s;
+    position: relative;
+    
+    margin-left: -30px;
+    
+}
+
+.slide ul li a:hover{
+   
+    color: orangered;
+    font-weight: 700;
+}
+
+
+
+
+
+.slide ul li a i{
+    width: 40px;
+    text-align: center;
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stockify-AI Inventory managment</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- google font -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+
+        <!-- font awesome pack -->
+        <script src="https://kit.fontawesome.com/641a7b5ed2.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar" role="navigation" aria-label="Main Navigation">
+                <div class="navbar__container">
+                    <a href="index.html" id="navbar-logo">Stockify </a>
+                    <ul class="navbar__menu">
+                        <li class="navbar__item">
+                            <a href="index.html" class="navbar__links">Home</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="index.html#services" class="navbar__links">Services</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="index.html#pricing" class="navbar__links">Pricing</a>
+                        </li>
+                        <li class="navbar__btn mobile">
+                            <a href="signup.php" class="button">Sign Up</a>
+                        </li>
+                    </ul>
+                    <div class="navbar__btn desktop">
+                        <a href="signup.php" class="button">Sign Up</a>
+                    </div>
+
+                    <button class="navbar__toggle" id="mobile-menu" aria-label="Toggle Navigation" aria-expanded=""
+                        false>
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                </div>
+            </nav>
+        </header>
+
+
+        <!--Hero Section-->
+        <main>
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <h1>AI powerd inventory system</h1>
+                        <p>
+                            Join today and receive up to 6 months* of our premuim subscription . <h6>*Valid for new customers only.</h6>
+                        </p>
+                        <button class="hero__btn">Sign Up</button>
+                    </div>
+                    <div class="hero__image">
+                        <img id="hero-img" src="images/hero-pic-1.svg" alt="Illustration of credit card" />
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Rotating Logos Section -->
+            <div class="rotating-logos">
+                <div class="rotating-logos__track">
+                    <span class="logo-text">Discover our features that makes us the best in the market</span>
+
+                </div>
+            </div>
+
+
+            <!-- Why Choose Us Section -->
+            <section class="why-choose-us" id="services">
+                <div class="container">
+                    <h2>Why Choose Us</h2>
+                    <p class="intro-text">
+                        Discover how our features that makes us the best in the market <br>
+                        with AI advanced technologies
+                    </p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-lock icon"></i>
+                            <h3>Secure & Reliable</h3>
+                            <p>Your data is protected with top-level security measures, ensuring privacy and reliability
+                                for all your financial operations.</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fa-solid fa-chart-simple icon"></i>
+                            <h3>AI Features</h3>
+                            <p>Leverage powerful AI tools to analyze trends, automate tasks, and gain valuable insights
+                                from your data in real time.</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fa-solid fa-users icon"></i>
+                            <h3>Multiple Users</h3>
+                            <p>Collaborate efficiently with multi-user support, allowing teams to work together with
+                                customizable permissions.</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fa-solid fa-gauge-simple-high icon"></i>
+                            <h3>Advanced Tracking System</h3>
+                            <p>Track inventory, performance, and sales with precision using our intelligent and
+                                responsive tracking dashboard.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Pricing Section -->
+            <section class="services" id="pricing">
+                <h2>Choose the right plan for you</h2>
+                <!--Pricing Toggle Button-->
+                <div class="pricing-toggle">
+                    <div class="toggle-container">
+                        <span class="toggle-option">Monthly</span>
+                        <label class="switch">
+                            <input type="checkbox" id="pricing-toggle-checkbox" onclick="switchPricing()" />
+
+                            <span class="slider"></span>
+                        </label>
+                        <span class="toggle-option">Yearly</span>
+                    </div>
+                    <div class="save-percentage-container">
+                        <span class="save-percentage">Save 20%</span>
+                    </div>
+                </div>
+
+
+
+                <div class="services_container">
+                    <!--Basic Plan-->
+                    <div class="services_card">
+                        <div class="card-content">
+                            <h3>Free Plan</h3>
+                            <div class="card-price">
+                                <p class="price monthly-price">Free</p>
+                                <p class="price yearly-price hidden">Free</p>
+                                <a href="/signup.html" class="price-btn">Get Started</a>
+                                <p id="small-desc">Everything you need to get started</p>
+                            </div>
+
+                            <div class="card-features">
+                                <p>features :</p>
+                                <ul>
+                                    <li>Web App Only</li>
+                                    <li>Access to Basic Features</li>
+                                    <li>Multiple users with differnt privleges</li>
+                                    <li>Enhanced Stastics</li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="services_card">
+                        <div class="card-content">
+                            <h3>Standard Plan</h3>
+                            <div class="card-price">
+                                <p class="price monthly-price">50 MAD/mo</p>
+                                <p class="price yearly-price hidden">40 MAD/mo</p>
+                                <a href="/signup.html" class="price-btn">Get Started</a>
+                                <p id="small-desc">All You Need to Grow Your Business</p>
+                            </div>
+
+                            <div class="card-features">
+                                <p>features :</p>
+                                <ul>
+                                    <li></li>
+                                    <li>Full Access to All Features</li>
+                                    <li>Desktop Version of the App</li>
+                                    <li>Built-in Ai Invoice Scanner</li>
+                                    <li>Integrated AI Chat-bot</li>
+                                    
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="services_card">
+                        <div class="card-content">
+                            <h3>Premuim Plan</h3>
+                            <div class="card-price">
+                                <p class="price monthly-price">70 MAD/mo</p>
+                                <p class="price yearly-price hidden">55 MAD/mo</p>
+                                <a href="/signup.html" class="price-btn">Get Started</a>
+                                <p id="small-desc">Unlock Professionalism with the Ultimate Pack</p>
+                            </div>
+
+                            <div class="card-features">
+                                <p>features :</p>
+                                <ul>
+                                    <li>All The previous Features</li>
+                                    <li>Mobile Version of the App</li>
+                                    <li>Advanced Ai chat-bot</li>
+                                    <li>Customer Support 24/7</li>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--Footer Section-->
+            <footer>
+                <div class="footer_container">
+                    <div class="footer_links">
+                        <div class="footer_link-wrapper">
+                            <div class="footer_link-items">
+                                <h2>About Us</h2>
+                                <a href="/how-it-works.html">How it works</a>
+                                <a href="/testimonials.html">Testimonials</a>
+                                <a href="/testimonials.html">Investments</a>
+                                <a href="/testimonials.html">Terms of Services</a>
+                            </div>
+                            <div class="footer_link-items">
+                                <h2>Contact Us</h2>
+                                <a href="/contact.html">Contact</a>
+                                <a href="/testimonials.html">Support</a>
+                                <a href="/testimonials.html">File a Claim</a>
+                                <a href="/testimonials.html">Sponsorships</a>
+                            </div>
+                        </div>
+
+                        <div class="footer_link-wrapper">
+                            <div class="footer_link-items">
+                                <h2>Contact Us</h2>
+                                <a href="/contact.html">Contact</a>
+                                <a href="/testimonials.html">Support</a>
+                                <a href="/testimonials.html">File a Claim</a>
+                                <a href="/testimonials.html">Sponsorships</a>
+                            </div>
+
+
+                            <div class="footer_link-items">
+                                <h2>Social Media</h2>
+                                <a href="/contact.html">Instagram</a>
+                                <a href="/testimonials.html">Facebook</a>
+                                <a href="/testimonials.html">Youtube </a>
+                                <a href="/testimonials.html">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="social_media">
+                        <div class="social_media-wrap">
+                            <div class="footer_logo">
+                                <a href="" id="footer-logo">Stockify</a>
+                            </div>
+                            <p class="website_rights">
+                                © Stockify <span id="year"></span> All rights reserved
+                            </p>
+
+                            <div class="social_icons">
+                                <a href="" class="social_icon-link" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+
+                                <a href="" class="social_icon-link" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                                <a href="" class="social_icon-link" target="_blank" rel="noopener noreferrer"
+                                    aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+
+                                <a href="" class="social_icon-link" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Youtube">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </footer>
+        </main>
+        <script src="app.js"></script>
+    </body>
+
+    </html>
